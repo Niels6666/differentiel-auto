@@ -5,7 +5,7 @@ Le rendu est fait avec openGL et l'interface avec [ImGui](https://github.com/Spa
 
 ## Comment l'essayer
 - Télécharger le dossier `simulation` qui contient le .jar et les ressources nécessaires.
-- Lancer le .jar avec Java 24
+- Lancer le .jar
 
 ## Commandes
 - Pour diriger le véhicule, utiliser les touches fléchées, et pour freiner la barre espace.
@@ -25,7 +25,7 @@ La fenêtre debug contient 3 sections :
 - Pour afficher les positions des roues, cocher `Traces des roues`.
 - Pour visualiser la vitesse des roues, cocher `Vitesse des roues`. Cela affichera un graphique avec 4 courbes où `FL` correspond à la roue avant gauche, `FR` à la roue avant droite, `RL` à la roue arrière gauche et `RR` à la roue arrière droite.
 - Pour simuler un différentiel ouvert, cocher `Différentiel ouvert`, sinon l'essieu moteur sera comme un essieu rigide.
-- Pour enregistrer une manoeuvre, spécifiez un nom de fichier valide puis cliquer sur `Enregistrer`. Les fichiers sont enregistrés dans le dossier `res/save`.
+- Pour enregistrer une manoeuvre, spécifier un nom de fichier valide puis cliquer sur `Enregistrer`. Les fichiers sont enregistrés dans le dossier `res/save`.
 - Pour rejouer une manoeuvre, sélectionner un fichier et cliquer sur `Lire le fichier`. Si vous voulez comparer le comportement du véhicule avec/sans différentiel, vous pouvez rejouer l'enregistrement avec `inverser USE_DIFFERENTIAL` coché ce qui cochera automatiquement `Différentiel ouvert` si ce n'était pas fait lors de l'enregistrement et inversement si c'était fait.
 - Enfin vous pouvez sauvegarder les positions des roues (lorsque vous rejouez une manoeuvre) dans fichier .txt (au format csv) en cochant `Sauvegarder les résultats`. Le fichier sera écrit dans `res/results`. C'est utile pour une exploitation dans Regressi par exemple.
 
